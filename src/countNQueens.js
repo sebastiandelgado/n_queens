@@ -45,5 +45,5 @@ var countNQueens = function(n) {
   }
 }
 
-countNQueens(8);
+countNQueens(18);
 

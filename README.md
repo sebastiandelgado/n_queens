@@ -8,7 +8,7 @@ Performance
 
 Here is the performance of the algorithm running on my laptop (2.4GHz Intel Core 2 Duo)
 
-| N  | Number of solutions | time to compute |
+| N  | Number of solutions | Runtime         |
 |:-- |:------------------- |:--------------- |
 | 1  | 1                   | < 1 ms          |
 | 2  | 0                   | 0.025 s         |
