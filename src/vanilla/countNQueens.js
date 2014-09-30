@@ -1,4 +1,4 @@
-var countNQueens = function(n) {
+exports.countNQueens = function(n) {
 
   if (n === 1) {
     return 1;
@@ -6,7 +6,7 @@ var countNQueens = function(n) {
 
   var count = 0;
   var attacks = Math.pow(2,n);
-  var sizeMask = attack - 1;
+  var sizeMask = attacks - 1;
 
   var placeQueen = function(col,rd,ld) {
     if (sizeMask === col) {
@@ -44,9 +44,4 @@ var countNQueens = function(n) {
 return count;
 
 }
-
-var s = Date.now();
-console.log(countNQueens(16));
-var f = Date.now();
-console.log((f - s) / 1000);
 
