@@ -1,47 +1,5 @@
 *************************************************************
-Started running N queens at September 29th 2014, 10:56:17 pm
-*************************************************************
-Found 1 solutions for N = 1 in 0 seconds
-Found 0 solutions for N = 2 in 0 seconds
-Found 0 solutions for N = 3 in 0 seconds
-Found 2 solutions for N = 4 in 0 seconds
-Found 10 solutions for N = 5 in 0 seconds
-Found 4 solutions for N = 6 in 0 seconds
-Found 40 solutions for N = 7 in 0 seconds
-Found 92 solutions for N = 8 in 0 seconds
-Found 352 solutions for N = 9 in 0.002 seconds
-Found 724 solutions for N = 10 in 0 seconds
-Found 2680 solutions for N = 11 in 0.015 seconds
-Found 14200 solutions for N = 12 in 0.01 seconds
-Found 73712 solutions for N = 13 in 0.063 seconds
-Found 365596 solutions for N = 14 in 0.32 seconds
-Found 2279184 solutions for N = 15 in 2.187 seconds
-*************************************************************
-Finished running N queens at September 29th 2014, 10:56:19 pm
-*************************************************************
-Started running N queens at September 29th 2014, 11:00:14 pm
-*************************************************************
-Found 1 solutions for N = 1 in 0 seconds
-Found 0 solutions for N = 2 in 0 seconds
-Found 0 solutions for N = 3 in 0 seconds
-Found 2 solutions for N = 4 in 0 seconds
-Found 10 solutions for N = 5 in 0 seconds
-Found 4 solutions for N = 6 in 0 seconds
-Found 40 solutions for N = 7 in 0 seconds
-Found 92 solutions for N = 8 in 0.001 seconds
-Found 352 solutions for N = 9 in 0.001 seconds
-Found 724 solutions for N = 10 in 0.001 seconds
-Found 2680 solutions for N = 11 in 0.006 seconds
-Found 14200 solutions for N = 12 in 0.01 seconds
-Found 73712 solutions for N = 13 in 0.062 seconds
-Found 365596 solutions for N = 14 in 0.324 seconds
-Found 2279184 solutions for N = 15 in 2.267 seconds
-Found 14772512 solutions for N = 16 in 13.985 seconds
-*************************************************************
-Finished running N queens at September 29th 2014, 11:00:31 pm
-*************************************************************
-Started running N queens at September 29th 2014, 11:02:40 pm
-*************************************************************
+Started running N queens at September 30th 2014, 7:41:07 pm*************************************************************
 Found 1 solutions for N = 1 in 0 seconds
 Found 0 solutions for N = 2 in 0.001 seconds
 Found 0 solutions for N = 3 in 0 seconds
@@ -50,14 +8,32 @@ Found 10 solutions for N = 5 in 0 seconds
 Found 4 solutions for N = 6 in 0 seconds
 Found 40 solutions for N = 7 in 0 seconds
 Found 92 solutions for N = 8 in 0 seconds
-Found 352 solutions for N = 9 in 0.012 seconds
-Found 724 solutions for N = 10 in 0.001 seconds
+Found 352 solutions for N = 9 in 0.002 seconds
+Found 724 solutions for N = 10 in 0 seconds
 Found 2680 solutions for N = 11 in 0.002 seconds
 Found 14200 solutions for N = 12 in 0.01 seconds
-Found 73712 solutions for N = 13 in 0.066 seconds
-Found 365596 solutions for N = 14 in 0.329 seconds
-Found 2279184 solutions for N = 15 in 2.195 seconds
-Found 14772512 solutions for N = 16 in 15.064 seconds
-Found 95815104 solutions for N = 17 in 102.61 seconds
+Found 73712 solutions for N = 13 in 0.063 seconds
+Found 365596 solutions for N = 14 in 0.336 seconds
+Found 2279184 solutions for N = 15 in 2.529 seconds
+Found 14772512 solutions for N = 16 in 14.324 seconds
 *************************************************************
-Finished running N queens at September 29th 2014, 11:04:41 pm
+Started running N queens at September 30th 2014, 7:41:42 pm*************************************************************
+Found 1 solutions for N = 1 in 0 seconds
+Found 0 solutions for N = 2 in 0 seconds
+Found 0 solutions for N = 3 in 0 seconds
+Found 2 solutions for N = 4 in 0 seconds
+Found 10 solutions for N = 5 in 0 seconds
+Found 4 solutions for N = 6 in 0 seconds
+Found 40 solutions for N = 7 in 0 seconds
+Found 92 solutions for N = 8 in 0 seconds
+*************************************************************
+Started running N queens at September 30th 2014, 7:42:25 pm
+*************************************************************
+Found 1 solutions for N = 1 in 0 seconds
+Found 0 solutions for N = 2 in 0 seconds
+Found 0 solutions for N = 3 in 0.001 seconds
+Found 2 solutions for N = 4 in 0 seconds
+Found 10 solutions for N = 5 in 0 seconds
+Found 4 solutions for N = 6 in 0 seconds
+Found 40 solutions for N = 7 in 0 seconds
+Found 92 solutions for N = 8 in 0 seconds

@@ -3,14 +3,10 @@ if (numberOfQueens === undefined) {
 	console.error("ERROR: Requires argument: number of queens");
 	return;
 }
-
 var fs = require('fs')
 var nQueens = require('./countNQueens.js');
 var moment = require('moment');
 var log = []; 
-log.push('*************************************************************')
-log.push('Started running N queens at ' + moment().format('MMMM Do YYYY, h:mm:ss a'));
-log.push('*************************************************************')
 
 var countingSolutions = [1, 0, 0, 2, 10, 4, 40, 92, 352,
 											 	724, 2680, 14200, 73712, 365596, 
@@ -18,7 +14,19 @@ var countingSolutions = [1, 0, 0, 2, 10, 4, 40, 92, 352,
 						 						4968057848, 39029188884, 314666222712,
 						 						2691008701644, 24233937684440] // up to n=23
 
-for (var n = 1; n <= numberOfQueens; n++) {
+var appendToLog = function(line, nextN) {
+	fs.appendFile('src/vanilla/runtimeLog.txt', line + '\n', function(err) {
+		if (err) { 
+			console.error('Failed to write to log'); 
+		} else {
+			if (nextN <= numberOfQueens) {
+				count(nextN);
+			}
+		}
+	});
+}
+
+var count = function(n) {
 	console.log("running vanilla N queens for n = " + n);
 	var start = Date.now();
 	var count = nQueens.countNQueens(n);
@@ -33,24 +41,15 @@ for (var n = 1; n <= numberOfQueens; n++) {
 		logEntry += '. Expected ' + count + ' to be ' + countingSolutions[n-1];
 		logEntry += '. Took ' + runtime + ' seconds to run';
 	}
-	log.push(logEntry)
-}
-log.push('*************************************************************')
-log.push('Finished running N queens at ' + moment().format('MMMM Do YYYY, h:mm:ss a'));
-
-
-for (var i = 0; i < log.length; i++) {
-	console.log(log[i]);
+	appendToLog(logEntry, n+1);
 }
 
-var appendToLogFile = function(index) {
-	fs.appendFile('src/vanilla/runtimeLog.txt', log[index] + '\n', function (err) {
-	  if (err) {
-	  	console.error('Failed to write to log');
-	  } else if (index < log.length - 1) {
-	  	appendToLogFile(index + 1);
-	  }
-	});
-}
+var separator = '*************************************************************'
 
-appendToLogFile(0);
+appendToLog(separator+'\n'+'Started running N queens at '+
+	moment().format('MMMM Do YYYY, h:mm:ss a') + '\n' + separator, 1000);
+
+count(1);
+
+//appendToLog(separator+'Finished running N queens at '+
+//	moment().format('MMMM Do YYYY, h:mm:ss a') + separator, 1000);
