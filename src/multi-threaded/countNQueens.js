@@ -17,7 +17,7 @@ var countNQueens = function(n) {
 
 	// create one worker per queen placed on the first half of the first row
 	for (var i = 0; i < numWorkers; i++) {
-		workerPool[i] = new Worker('src/countNQueensWorker.js');
+		workerPool[i] = new Worker('src/multi-threaded/countNQueensWorker.js');
 		// what to do when the worker responds with a partial count
 		workerPool[i].onmessage = function(msg) {
 			// here we handle the 'median' worker if n is odd
@@ -45,5 +45,5 @@ var countNQueens = function(n) {
   }
 }
 
-countNQueens(18);
+countNQueens(16);
 
