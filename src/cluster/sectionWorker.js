@@ -35,7 +35,6 @@ onmessage = function (oEvent) {
   var solvedSection = oEvent.data;
   solvedSection.status = 'SOLVED';
   solvedSection.solutionCount = sectionCount;
-  solvedSection.solver = 'random internet dude';
   solvedSection.solvedAt = Date.now;
   postMessage(solvedSection);
 };
