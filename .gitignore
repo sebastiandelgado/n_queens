@@ -1,2 +1,4 @@
 node_modules/*
 .DS_Store
+src/multi-threaded/*.txt
+src/vanilla/*.txt

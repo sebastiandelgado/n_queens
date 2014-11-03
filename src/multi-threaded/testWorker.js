@@ -3,6 +3,7 @@ var sizeMask;
 
 
 var placeQueen = function(n,col,rd,ld, sym) {
+  console.log(arguments);
 
   if (sizeMask === col) {
     partialCount++;
@@ -29,10 +30,17 @@ var placeQueen = function(n,col,rd,ld, sym) {
 };
 
 onmessage = function (oEvent) {
-	var args = oEvent.data;
+	var args = oEvent.data.split(',');
 	sizeMask = Math.pow(2,args[0]) - 1;
-	placeQueen(args[0],args[1],args[2],args[3], args[4]);
+	placeQueen(args[0][0],args[0][1],args[0][2],args[0][3], args[0][4]);
   postMessage(partialCount);
 };
 
 
+var problemParts = require('./splitProblem.js').getParts(8, 1);
+console.log(problemParts);
+placeQueen(problemParts[0]);
+placeQueen(problemParts[1]);
+placeQueen(problemParts[2]);
+placeQueen(problemParts[3]);
+console.log(partialCount);

@@ -1,9 +1,10 @@
 
-// Will return an array of states for searching
-// the space of the n queens problem
-// State: [n, col, rd, ld, sym]
-// numParts >= n/2 please
-// It may return up to numParts + n parts.
+/* Will return an array of states for searching
+* the space of the n queens problem
+* State: [n, col, rd, ld, sym]
+* numParts >= n/2 please
+* It may return up to numParts + n parts.
+*/
 var splitQueensProblem = function(n, numParts) {
 
 	// get the states for the first row
@@ -48,11 +49,6 @@ var splitQueensProblem = function(n, numParts) {
 	}
 	return states
 }
-
-
-
-// var parts = splitQueensProblem(n, 100);
-// console.log(JSON.stringify(parts));
 
 var n = 8;
 var count = 0;
